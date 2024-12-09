@@ -1,0 +1,82 @@
+<!--pages/index/index.wxml-->
+<cu-custom bgColor="bg-gradual-pink" isBack="{{ false }}" />
+
+<t-tabs defaultValue="{{ 1 }}" bind:change="onTabsChange" bind:click="onTabsClick">
+  <t-tab-panel icon="view-list" label="" value="0" />
+  <t-tab-panel label="关注" value="1" />
+  <t-tab-panel label="发现" value="2" />
+  <t-tab-panel icon="search" label="" value="3" />
+</t-tabs>
+
+<view class="cu-card case">
+  <view class="flex">
+    <view class="cu-item bg-white shadow flex-sub margin-xs radius">
+      <view class="image" style="margin: 0;">
+        <image src="https://sns-webpic-qc.xhscdn.com/202412091622/abbb57c0a269b01710a989b39af54664/1040g2sg31a2q4fjv6o705pnadva7c8i8d4ilhl8!nd_prv_wlteh_webp_3" />
+      </view>
+      <view class="text-content padding-xs">
+        <view class="margin-bottom-xs">计算机专业毕业，不从事程序员工作</view>
+        <view class="flex justify-between text-grey text-sm">
+          <view class="flex align-center" style="gap: 8rpx;">
+            <view class="cu-avatar round xs" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+            <text>小红薯669D477F</text>
+          </view>
+          <text class="cuIcon-appreciatefill margin-lr-xs"> 2447</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="cu-item bg-white shadow flex-sub margin-xs radius">
+      <view class="image" style="margin: 0;">
+        <image src="https://sns-webpic-qc.xhscdn.com/202412091622/abbb57c0a269b01710a989b39af54664/1040g2sg31a2q4fjv6o705pnadva7c8i8d4ilhl8!nd_prv_wlteh_webp_3" />
+      </view>
+      <view class="text-content padding-xs">
+        <view class="margin-bottom-xs">计算机专业毕业，不从事程序员工作</view>
+        <view class="flex justify-between text-grey text-sm">
+          <view class="flex align-center" style="gap: 8rpx;">
+            <view class="cu-avatar round xs" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+            <text>小红薯669D477F</text>
+          </view>
+          <text class="cuIcon-appreciatefill margin-lr-xs"> 2447</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="flex">
+    <view class="cu-item bg-white shadow flex-sub margin-xs radius">
+      <view class="image" style="margin: 0;">
+        <image src="https://sns-webpic-qc.xhscdn.com/202412091622/abbb57c0a269b01710a989b39af54664/1040g2sg31a2q4fjv6o705pnadva7c8i8d4ilhl8!nd_prv_wlteh_webp_3" />
+      </view>
+      <view class="text-content padding-xs">
+        <view class="margin-bottom-xs">计算机专业毕业，不从事程序员工作</view>
+        <view class="flex justify-between text-grey text-sm">
+          <view class="flex align-center" style="gap: 8rpx;">
+            <view class="cu-avatar round xs" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+            <text>小红薯669D477F</text>
+          </view>
+          <text class="cuIcon-appreciatefill margin-lr-xs"> 2447</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="cu-item bg-white shadow flex-sub margin-xs radius">
+      <view class="image" style="margin: 0;">
+        <image src="https://sns-webpic-qc.xhscdn.com/202412091622/abbb57c0a269b01710a989b39af54664/1040g2sg31a2q4fjv6o705pnadva7c8i8d4ilhl8!nd_prv_wlteh_webp_3" />
+      </view>
+      <view class="text-content padding-xs">
+        <view class="margin-bottom-xs">计算机专业毕业，不从事程序员工作</view>
+        <view class="flex justify-between text-grey text-sm">
+          <view class="flex align-center" style="gap: 8rpx;">
+            <view class="cu-avatar round xs" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+            <text>小红薯669D477F</text>
+          </view>
+          <text class="cuIcon-appreciatefill margin-lr-xs"> 2447</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view>
+  <!-- TODO 一行两个卡片，一页四个卡片，交错瀑布流排列 -->
+</view>
