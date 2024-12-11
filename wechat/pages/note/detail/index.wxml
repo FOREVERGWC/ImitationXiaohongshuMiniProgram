@@ -1,0 +1,32 @@
+<!--pages/note/detail/index.wxml-->
+<view class="bg-white">
+  <cu-custom bgColor="bg-gradual-pink" isBack="{{ true }}">
+    <view slot="content">
+      <view class="flex align-center" style="gap: 8rpx;">
+        <view class="cu-avatar radius sm" style="background-image:url({{detail.author.avatar}});" />
+        <text class="text-black">{{ detail.author.username }}</text>
+      </view>
+    </view>
+  </cu-custom>
+
+  <view class="padding-lr-sm" style="height: 100vh;">
+    <image src="{{ detail.img }}" class="margin-bottom-sm detail-image" />
+    <view class="margin-bottom-sm">{{ detail.title }}</view>
+    <view class="margin-bottom-xs">{{ detail.content }}</view>
+    <view class="text-gray text-sm">编辑于{{ detail.updateTime }}</view>
+  </view>
+
+  <view class="cu-bar bg-white tabbar border shop foot">
+    <view class="bg-red submit">说点什么</view>
+    <button class="action" open-type="contact">
+      <view class="cuIcon-like">
+      </view>
+    </button>
+    <view class="action text-orange">
+      <view class="cuIcon-favor" />
+    </view>
+    <view class="action">
+      <view class="cuIcon-comment" />
+    </view>
+  </view>
+</view>
