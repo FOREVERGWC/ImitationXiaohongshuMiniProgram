@@ -1,6 +1,7 @@
 // pages/note/detail/index.js
 import {
-  records
+  records,
+  comments
 } from '../../../utils/common'
 
 Page({
@@ -10,7 +11,8 @@ Page({
    */
   data: {
     id: '',
-    detail: {}
+    detail: {},
+    comments: comments
   },
 
   getDetail() {
@@ -18,7 +20,26 @@ Page({
     this.setData({
       detail: detail
     })
+
     // TODO 调用接口查询详情
+  },
+
+  handleLike() {
+    const detail = this.data.detail;
+    detail.hasLike = !detail.hasLike;
+    detail.like += detail.hasLike ? 1 : -1;
+    this.setData({
+      detail: detail
+    });
+  },
+
+  handleCollection() {
+    const detail = this.data.detail;
+    detail.hasCollection = !detail.hasCollection;
+    detail.collection += detail.hasCollection ? 1 : -1;
+    this.setData({
+      detail: detail
+    });
   },
 
   /**
